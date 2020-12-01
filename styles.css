@@ -309,3 +309,15 @@ footer a {
     margin-top: 100px;
   }
 }
+@media (max-width: 380px) {
+  header{
+    margin-top: 220px;
+  }
+
+  header div.nav-container nav.navbar .menu{
+    flex-direction: column;
+  }
+  header div.nav-container nav.navbar .menu li{
+    margin-top: 16px;
+  }
+}
