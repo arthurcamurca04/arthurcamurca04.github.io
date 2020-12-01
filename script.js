@@ -4,6 +4,9 @@
 //animar o scroll até o alvo
 
 const menuItems = document.querySelectorAll('.menu a[href^="#"]');
+const $headerButton = document.getElementById('header-button');
+
+$headerButton.addEventListener('click', scrollToIdOnClick);
 
 menuItems.forEach(item => {
   item.addEventListener('click', scrollToIdOnClick);
