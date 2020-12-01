@@ -2,23 +2,34 @@
 <html lang="pt-br">
   <head>
     <title>Arthur</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Arthur">
-    <meta name="description" content="Curso HTML e CSS">
-    <meta name="keywords" content="HTML, CSS">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Arthur" />
+    <meta
+      name="description"
+      content="Site demonstrativo de Arthur Camurça no github pages"
+    />
+    <meta
+      name="keywords"
+      content="portfolio, web, desenvolvimento web, 'Arthur Camurça', 'site pessoal'"
+    />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://kit.fontawesome.com/d5c6bb15d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d5c6bb15d4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header>
-
       <div class="nav-container">
         <div class="brand">
           <a href="/">Arthur</a>
@@ -26,92 +37,115 @@
 
         <nav class="navbar">
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Orçamento</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+              <a id="whatsapp-btn" href="/"
+                >WhatsApp <i class="fab fa-whatsapp"></i
+              ></a>
+            </li>
           </ul>
         </nav>
-    </div>
+      </div>
 
       <div class="header">
-
         <div class="header-card">
-          <h1 class="header-title">A melhor maneira para <br> você dar vida a suas ideias</h1>
+          <h1 class="header-title">
+            A melhor maneira para <br />
+            você dar vida a suas ideias
+          </h1>
 
-          <p class="header-text"> Venha conhecer nosso trabalho entrando com contato <br />
-            com a gente clicando no botão abaixo.</p>
+          <p class="header-text">
+            Venha conhecer nosso trabalho entrando com contato <br />
+            com a gente clicando no botão abaixo.
+          </p>
 
           <a class="header-button" href="#">Entre em contato</a>
         </div>
 
         <div class="header-image">
-          <img src="./header-image.svg" alt="Uma ilustração de um cara olhando uma página web"
-        />
+          <img
+            src="./header-image.svg"
+            alt="Uma ilustração de um cara olhando uma página web"
+          />
         </div>
       </div>
     </header>
 
     <main>
-      <section class="portfolio">
+      <section id="portfolio" class="portfolio">
         <div class="portfolio-header">
           <span>3 demos!</span>
 
           <h2>Portfólio</h2>
 
-          <p>Confira um pouco do meu trabalho. Estes são os sites que tenho trabalhado. </p>
+          <p>
+            Confira um pouco dos sites logo abaixo. Estes são os sites que tenho
+            trabalhado.
+          </p>
         </div>
 
         <div class="portfolio-grid">
           <div class="portfolio-card">
             <h3>LinkEnergy Solar - Website</h3>
-            <a href="#" target="_blank">
-              <img src="./linkenergysolar.png" alt="LinkEnergy Solar"/>
+            <a href="https://linkenergysolar.com.br" target="_blank">
+              <img src="./linkenergysolar.png" alt="LinkEnergy Solar" />
             </a>
           </div>
 
           <div class="portfolio-card">
             <h3>Educandário Américo Mesquita - Website</h3>
-            <a href="#" target="_blank">
-              <img src="./educandario.png" alt="educandario"/>
+            <a href="https://educandarioamericomesquita.com.br" target="_blank">
+              <img src="./educandario.png" alt="educandario" />
             </a>
           </div>
 
           <div class="portfolio-card">
             <h3>AC Web Development - Website</h3>
-            <a href="#" target="_blank">
-              <img src="./arthurcamurca.png" alt="AC Development"/>
+            <a href="https://arthurcamurca.com.br" target="_blank">
+              <img src="./arthurcamurca.png" alt="AC Development" />
             </a>
           </div>
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contato" class="contact">
         <div class="contact-header">
           <h2>Contate-nos</h2>
           <p>Entre em contato conosco através do nosso formulário.</p>
         </div>
 
         <form action="#">
-          <input type="text" placeholder="Nome">
-          <input type="email" placeholder="E-mail">
+          <input type="text" placeholder="Nome" required />
+          <input type="email" placeholder="E-mail" required />
 
-          <textarea minlength="10" maxlength="250" placeholder="Digite aqui sua mensagem para nós...">
+          <textarea
+            required
+            minlength="10"
+            maxlength="250"
+            placeholder="Digite aqui sua mensagem para nós..."
+          >
           </textarea>
 
           <button type="submit">Enviar</button>
         </form>
 
         <div class="social-network">
-          <a href="https://www.facebook.com/arthur.camurca" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://instagram.com/arthurcamurca" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/arthur.camurca" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://instagram.com/arthurcamurca" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
       </section>
     </main>
 
     <footer>
-      Copyright&copy; 2020 <a href="https://arthurcamurca.com.br">AC Web Development</a>
+      Copyright&copy; 2020
+      <a href="https://arthurcamurca.com.br">AC Web Development</a>
     </footer>
+    <script src="./script.js" type="text/javascript"></script>
   </body>
-
-</html> 
+</html>

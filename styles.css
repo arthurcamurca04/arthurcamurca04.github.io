@@ -1,254 +1,277 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-html, body{
-  width: 100vw;
+html,
+body {
+  width: 100%;
   height: 100vh;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
-input, textarea{
-  font-family: 'Nunito', sans-serif;
+input,
+textarea {
+  font-family: "Nunito", sans-serif;
 }
 
 header {
-background-color: #08aeea;
-background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  background-image: linear-gradient(to top,#08aeea, #2af598);
+  margin-top: 55px;
 }
 
-
 header div.nav-container {
-padding: 16px;
-display: flex;
-align-items: center;
-justify-content: space-around;
+  background-color: #2af598;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
 }
 
 header div.nav-container .brand a {
-text-decoration: none;
-font-size: 20px;
-font-weight: 900;
-color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
 }
 
 header div.nav-container .navbar .menu {
-list-style: none;
-display: flex;
-align-items: center;
-justify-content: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header div.nav-container .navbar .menu li {
-padding-right: 16px;
+  padding-right: 16px;
 }
 
 header div.nav-container .navbar .menu li a {
-text-decoration: none;
-font-weight: bold;
-color: #eee;
-transition: color 0.2s linear;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.2s linear;
 }
 header div.nav-container .navbar .menu li a:hover {
-color: #fff;
+  color: #eee;
 }
 
 header .header {
-margin-top: 30px;
-display: flex;
-align-items: center;
-justify-content: center;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div.nav-container .navbar .menu li #whatsapp-btn {
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.2s linear;
+}
+
+header div.nav-container .navbar .menu li #whatsapp-btn:hover {
+  opacity: 90%;
 }
 
 header .header .header-card .header-title {
-color: white;
-
+  color: white;
 }
 
 header .header .header-card .header-text {
-color: #ddd;
-margin-top: 26px;
-margin-bottom: 26px;
+  color: #ddd;
+  margin-top: 26px;
+  margin-bottom: 26px;
 }
 
 header .header .header-card .header-button {
-text-decoration: none;
-color: white;
-background-color: green;
-padding: 8px 20px;
-border-radius: 25px;
-transition: all 0.2s linear;
+  text-decoration: none;
+
+  font-weight: 700;
+  color: white;
+  background-color: green;
+  padding: 8px 20px;
+  border-radius: 25px;
+  transition: all 0.2s linear;
 }
 
 header .header .header-button:hover {
-opacity: 90%;
+  opacity: 90%;
 }
 
-header .header .header-image img{
-margin-left: 32px;
-width:498px;
-height: 498px;
+header .header .header-image img {
+  margin-left: 32px;
+  width: 498px;
+  height: 498px;
 }
 
 main section.portfolio .portfolio-header {
-padding: 64px 0;
-text-align: center;
+  padding: 64px 0;
+  text-align: center;
 }
 
 main section.portfolio .portfolio-header span {
-background-color: aquamarine;
-color: blue;
-padding: 2px 5px;
-border-radius: 25px;
+  background-color: aquamarine;
+  color: blue;
+  padding: 2px 5px;
+  border-radius: 25px;
 }
 
 main section.portfolio .portfolio-header h2 {
-color: #393939;
+  color: #393939;
 }
 main section.portfolio .portfolio-header p {
-color: #aaa;
+  color: #aaa;
 }
 
 main section.portfolio .portfolio-header h2,
 main section.portfolio .portfolio-header p {
-margin-top: 16px;
+  margin-top: 16px;
 }
 
 main section.portfolio div.portfolio-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
 main section.portfolio div.portfolio-grid div.portfolio-card {
-margin: auto;
-text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 main section.portfolio div.portfolio-grid div.portfolio-card h3 {
-color: #393939;
+  color: #393939;
 }
 
 main section.portfolio div.portfolio-grid div.portfolio-card a img {
-height: 216px;
-width: 313px;
-margin-top: 16px;
-border-radius: 10px;
-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
-transition: transform 0.2s linear;
+  height: 216px;
+  width: 313px;
+  margin-top: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s linear;
 }
 
 main section.portfolio div.portfolio-grid div.portfolio-card a img:hover {
-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 section.contact {
-margin-top: 44px;
-height: 570px;
-background-color: #f9f9f9;
-text-align: center;
+  margin-top: 44px;
+  height: 570px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
-section.contact i{
-margin-top: 16px;
-font-size: 30px;
-color: #393939;
+section.contact i {
+  margin-top: 16px;
+  font-size: 30px;
+  color: #393939;
 }
 
 main section.contact .contact-header {
-padding: 44px 0;
-text-align: center;
+  padding: 44px 0;
+  text-align: center;
 }
 
 main section.contact .contact-header h2 {
-color: #393939;
+  color: #393939;
 }
 main section.contact .contact-header p {
-color: #aaa;
+  color: #aaa;
 }
 
 main section.contact .contact-header h2,
 main section.contact .contact-header p {
-margin-top: 16px;
+  margin-top: 16px;
 }
 
 main section.contact form {
-margin: auto;
-width: 550px;
-height: 295px;
-display: flex;
-flex-direction: column;
-align-items: stretch;
-justify-content: space-around;
+  margin: auto;
+  width: 550px;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
 }
 
 main section.contact form input,
 main section.contact form textarea {
-padding: 20px 8px;
-border-radius: 5px;
-border: none;
-box-shadow: 0 0 0 0;
-outline: 0;
+  padding: 20px 8px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
 }
 
 main section.contact form textarea {
-resize: none;
+  resize: none;
 }
 
 main section.contact form input:focus-within,
 main section.contact form textarea:focus-within {
-border: 1px solid #2af598;
+  border: 1px solid #2af598;
 }
 
 main section.contact form button {
-text-decoration: none;
-color: white;
-background-color: green;
-padding: 10px 16px;
-border-radius: 25px;
-transition: all 0.2s linear;
-border: none;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: green;
+  padding: 10px 16px;
+  border-radius: 25px;
+  transition: all 0.2s linear;
+  border: none;
 }
 
 main section.contact form button:hover {
-opacity: 90%;
+  opacity: 90%;
 }
 
-footer{
-background-color: #393939;
-color: white;
-font-weight: 600;
-height: 80px;
-margin: auto;
-display: flex;
-align-items: center;
-justify-content: space-around;
+footer {
+  background-color: #393939;
+  color: white;
+  font-weight: 600;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-footer a{
-text-decoration: none;
-color: white;
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
-@media(max-width: 1080px){
+@media (max-width: 1080px) {
   header div.nav-container {
     flex-direction: column;
   }
 
-  header .header{
+  header .header {
     flex-direction: column;
     padding: 16px;
   }
 
-  header .header .header-card{
+  header .header .header-card {
     text-align: center;
     margin-bottom: 44px;
   }
 
-  header .header .header-image img{
-   width: 250px;
-   height: 250px;
-   margin: 0;
+  header .header .header-image img {
+    width: 250px;
+    height: 250px;
+    margin: 0;
   }
 
   main section.portfolio .portfolio-header {
@@ -257,7 +280,6 @@ color: white;
   }
 
   main section.portfolio div.portfolio-grid {
-    
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr);
   }
@@ -270,5 +292,4 @@ color: white;
     width: 310px;
     height: 295px;
   }
-  
 }
