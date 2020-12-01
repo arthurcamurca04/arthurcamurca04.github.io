@@ -254,8 +254,9 @@ footer a {
 }
 
 @media (max-width: 1080px) {
+
   header div.nav-container {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   header .header {
@@ -291,5 +292,20 @@ footer a {
   main section.contact form {
     width: 310px;
     height: 295px;
+  }
+}
+
+@media (max-width: 612px) {
+
+  header div.nav-container {
+    flex-direction: column;
+  }
+
+  header div.nav-container nav.navbar{
+    margin-top:32px;
+  }
+
+  header{
+    margin-top: 100px;
   }
 }
